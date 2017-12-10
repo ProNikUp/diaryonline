@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Группа (вставить)</title>
+	<script>	
+		function Table()
+		{
+			this.create = function(id, rows, cols)
+			{
+				newelem = document.createElement("table");
+				newelem.border=1;
+				for(i=0; i<rows; i++)
+				{
+					row=newelem.insertRow(0)
+					for(j=0; j<cols; j++)
+					{
+						col=row.insertCell(0);
+					}
+				}
+				
+				document.getElementById(id).appendChild(newelem);
+				this.t = newelem;				
+			}
+			this.get = function(r, c)
+			{
+				body=this.t.tBodies[0];
+				row=body.rows[r];
+				cell=row.cells[c];
+				return cell.innerHTML;
+			}
+			this.set = function(r, c, val)
+			{
+				body=this.t.tBodies[0];
+				row=body.rows[r];
+				cell=row.cells[c];
+				cell.innerHTML=val;
+			}
+		}
+	</script>
+</head>
+<body>
+
+<div id="names"> </div>
+	<script>
+	tab=new Table();
+	tab.create("names", 5, 3);
+	for(i=0; i<5; i++)
+		for(j=0; j<3; j++)
+			tab.set(i,j, "lol");
+		/*
+	(tab.get(0,0)).onclick=function()
+	{
+		newelem = document.createElement("edit");
+		document.getElementById("names").appendChild(newelem);
+		alert("lol");	
+	}	
+	*/
+	</script>
+</body>
+</html>

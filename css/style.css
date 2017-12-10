@@ -1,0 +1,157 @@
+/*Отключение подсветки*/
+
+* {
+    outline: none;
+}
+
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+/*Фон*/
+a {
+	color: #FF2929;
+	text-decoration: none;
+
+}
+body{
+    background-image: url(img/fon.png);
+    background-repeat: no-repeat;
+}
+
+/*Загаловок*/
+
+.text1 {
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 5em;
+    text-align: center;
+    margin-top: 100px;
+    font-family: TT Walls Rough, sans-serif;
+}
+
+
+/*Менюшка*/
+
+#wrapper {
+    width: 800px;
+    height: 300px;
+    margin-top: 5%;
+    margin-left: 23%;
+    text-align: center;
+    font-family: TT Walls Rough;
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 140%;
+}
+
+
+/*Тоже часть минюшки*/
+
+#wrapper #leftCol {
+    width: 50%;
+    height: 130%;
+    margin: 0 auto;
+}
+
+
+/*Фон менюшки*/
+
+#wrapper #leftCol #bigArticle {
+    background-image: url(img/menu3.png);
+    height: 68%;
+    width: 100%;
+    float: left;
+}
+
+/*Отступ для логина*/
+
+#wrapper #leftCol #bigArticle .Login{
+    margin-top: 10%;
+}
+
+/*Отступ для пароля*/
+
+#wrapper #leftCol #bigArticle .Password{
+    margin-top: 12%;
+}
+
+/*Стили для строки ввода*/
+
+#wrapper #leftCol input {
+    width: 45%;
+    margin-left: 25%;
+    background-color: rgba(228, 228, 228, 0);
+    float: left;
+    border-radius: 5px;
+    border: 2px solid rgba(253, 253, 253, 0.185);
+    padding: 5px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 60%;
+}
+input::-webkit-input-placeholder {
+    color: rgba(226, 226, 226, 0.87) !important;
+    
+    }
+
+/*Стили для ссылки*/
+
+#authorization {
+    width: 103%;
+    margin-top: 5%;
+    float: left;
+    
+}
+
+#authorization div {
+    float: left;
+    width: 45%;
+   
+    margin-left: 25%;
+    margin-top: 5%; 
+    padding: 5px;
+   
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.829);
+}
+
+/*#authorization div:hover {
+    color: rgba(255, 255, 255, 0.4);
+}*/
+header {
+	width: 98%;
+	float: left;
+    padding: 1%;
+    border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.397);
+	/*border-bottom: 2px solid silver;*/
+    margin-bottom: 20px;
+    
+}
+
+header #menu1{
+	width: 48%;
+    float: left;
+    margin-left: 35%;
+}
+ header #menu1 div{
+ 	float: left;
+ 	margin-right: 20%;
+ 	padding: 5px;
+ 	font-family: TT Walls Rough;
+ 	font-size: 150%;
+ 	color: rgba(255, 255, 255, 0.829);
+
+ }
+
+  header #menu1 div:hover{
+    color: rgba(255, 255, 255, 0.4);
+ }
+
+#sch{
+    color: #ffffff;
+}
+body #names{
+    color: #ffffff;
+}
